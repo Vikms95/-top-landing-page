@@ -4,3 +4,5 @@
 -info > column / center-center
 -quote > row
 -sign-up > row
+
+TODO - image shrink and grow 
