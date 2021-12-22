@@ -10,6 +10,39 @@ html{
     min-width: 100%;
 }
 
+body{
+    
+
+}
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
 
 img{
     margin: 50px;
@@ -112,7 +145,7 @@ button{
 }
 
 .info-container{
-    padding:20px 100px;
+    padding:50px 100px;
 
 
     display: flex;
@@ -125,12 +158,12 @@ button{
 
 .info-title{
 
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bolder;
-    padding: 5px;
+    padding: 10px;
     border: solid 2px;
-    border-color: rgb(184, 181, 181);
-
+    border-color: rgb(0, 0, 0);
+    margin: 20px;
 
     display: flex;
     flex-direction: row;
@@ -147,6 +180,10 @@ img.info-image{
     max-width: auto;
     margin:0;
     margin-bottom: 20px;
+    padding: 5px;
+    border: solid 5px;
+    border-color: #3882f6;
+    border-radius: 30px;
     
     
 }
@@ -162,6 +199,8 @@ img.info-image{
 
 .info-image-text{
     font-weight: bold;
+    font-size: normal;
+    font-style: italic;
     
     display: flex;
     flex-direction: column;
@@ -174,13 +213,13 @@ img.info-image{
     font-style: italic;
     font-size: 32px;
     background-color: #E5E7EB; 
-    padding: 100px;
+    padding: 50px 100px;
+    gap: 20px;
 
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-
-
 
 }
 
@@ -196,10 +235,16 @@ img.info-image{
 .signup-box{
     padding: 30px 80px;
     color: white;
+    border: solid white;
+    border-radius: 10px;
 
     background-color: #3882f6;
     display: flex;
     flex-direction: row;
+    justify-content: ¡flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .signup-box-text{
@@ -207,12 +252,14 @@ img.info-image{
     flex-direction: column;
     padding-right: 50px;
     align-self: flex-start;
+    gap: 10px;
 }
 
 .signup-box-button{
     display: flex;
     flex-direction: row;
     align-self: center;
+    flex:0 0 none;
 }
 
 .footer-container{
