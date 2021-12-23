@@ -56,12 +56,15 @@ img{
 }
 
 a{
+    cursor: pointer;
     font-size: 16px;
     color: #E5E7EB;
     text-decoration: none;
+    display: flex;
 }
 
 button{
+    cursor: pointer;
     color: #E5E7EB;
     background-color: #3882f6 ;
     font-size: 20px;
